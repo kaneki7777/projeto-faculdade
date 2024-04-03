@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Perfil - Tinder</title>
+    <link rel="stylesheet" href="body perfil.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crie seu perfil</h1>
+        <form id="perfilForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="username">Nome de usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+                <div class="error-message" id="usernameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="bio">Biografia</label>
+                <textarea id="bio" name="bio" placeholder="Digite sua biografia"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fotoPerfil">Foto de perfil</label>
+                <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade">
+            </div>
+            <div class="form-group">
+                <label for="interesses">Interesses (separados por vírgula)</label>
+                <input type="text" id="interesses" name="interesses" placeholder="Ex: música, esportes, viagens">
+            </div>
+            <div class="form-group">
+                <label for="preferenciaSexual">Preferência Sexual</label>
+                <select id="preferenciaSexual" name="preferenciaSexual">
+                    <option value="hetero">Heterossexual</option>
+                    <option value="homossexual">Homossexual</option>
+                    <option value="bissexual">Bissexual</option>
+                    <option value="pansexual">Pansexual</option>
+                    <option value="assexual">Assexual</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (cm)</label>
+                <input type="number" id="altura" name="altura" placeholder="Digite sua altura">
+            </div>
+            <div class="form-group">
+                <label for="corCabelo">Cor do cabelo</label>
+                <select id="corCabelo" name="corCabelo">
+                    <option value="preto">Preto</option>
+                    <option value="castanho">Castanho</option>
+                    <option value="loiro">Loiro</option>
+                    <option value="ruivo">Ruivo</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="corOlhos">Cor dos olhos</label>
+                <select id="corOlhos" name="corOlhos">
+                    <option value="azul">Azul</option>
+                    <option value="verde">Verde</option>
+                    <option value="castanho">Castanho</option>
+                    <option value="preto">Preto</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-submit">Salvar perfil</button>
+        </form>
+    </div>
+
+    <script src="script cadstd.js"></script>
+</body>
+</html>
